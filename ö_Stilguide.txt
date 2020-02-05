@@ -1,0 +1,27 @@
+RESPONSIVE DIAMOND GRID PÅ YT
+
+GRADIENTER:::
+Gradienten: MANGENTA (#dd0890) -> ULRAVIOLET (#4b0082) Hemsidan
+Gradienten: TURKOSMINT (#0de1ec) -> ULTRAMARIN (#200c9c) Boka
+
+
+VANLIGA FÄRGER ÖVER SIDORNA:::
+Svarta element: KOLGRÅ (#222222)
+Vita element: GRANITGRÅ (#f0f0f0)
+
+
+HAMBURGAR-MENY:::
+* Kontakter
+* Konto -- Skapa konto // Mitt konto
+* Instagram
+* 3D-skrivare -- Boka 3D-skrivare // Felanmäla 3D-skrivare
+
+Kontakter:
+Skolans kontakter, e-mail adresser samt namn
+
+Konto:
+Skall innehålla två alternativ, "skapa konto" eller "mitt konto"
+
+
+LÄNKAR LÄNGST NER:::
+* Instagram
