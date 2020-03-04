@@ -16,7 +16,7 @@ body{
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-    "h h h"
+    "h h na"
     "s1 s1 s1"
     "s2 s2 s2"
     "s3 s3 s3"
@@ -24,36 +24,12 @@ body{
     "f f f"
 }
 
-.h{
-    grid-area: h;
-    background: white;
-    opacity: .8;
-}
-.s1{
-    grid-area: s1;
-    background: white;
-    opacity: .8;
-}
-.s2{
-    grid-area: s2;
-    background: white;
-    opacity: .8;
-}
-.s3{
-    grid-area: s3;
-    background: white;
-    opacity: .8;
-}
-.s4{
-    grid-area: s4;
-    background: white;
-    opacity: .8;
-}
+
 
 .f{
     grid-area: f;
     background: white;
-    opacity: .8;
+    opacity: .0;
 }
 
 .logo{
@@ -68,22 +44,27 @@ body{
 }
 
 nav{
+    grid-area: na;
     display: flex;
+    position: absolute;
+    right: 0px;
     justify-content: center;
     align-items: center;
     height: 10vh;
-    background-color: pink;
+    width: 20vw;
+    /*background-color: yellow;*/
 }
 
 .burger{
     margin-right: 50px;
+    position: absolute;
 }
 
-.navLinks{
+.navLinks{ /*rosa sido-bar*/
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    position: absolute;
+    position: fixed;
     right: 0px;
     height: 90vh;
     top: -90vh;
@@ -91,6 +72,7 @@ nav{
     align-items: center;
     width: 20%;
     translate: all 1s;
+    z-index: 1;
 }
 
 .navActive{
@@ -101,15 +83,15 @@ nav{
     list-style: none;
 }
 
-.navLinks a{
-    color: red;
+.navLinks a{ /*bilder, kontakter, övrigt, hem*/
+    color: green;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 20px;
 }
 
-.burger div{
+.burger div{ /*krysset*/
     width: 25px;
     height: 3px;
     background-color: blue;
@@ -126,4 +108,46 @@ nav{
 }
 .toggle .line3{
     transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.h{
+    grid-area: h;
+    background: white;
+    opacity: .0;
+}
+.s1{
+    grid-area: s1;
+    background: white;
+    opacity: .0;
+}
+.s2{
+    grid-area: s2;
+    background: white;
+    opacity: .0;
+}
+.s3{
+    grid-area: s3;
+    background: white;
+    opacity: .0;
+}
+.s4{
+    grid-area: s4;
+    background: white;
+    opacity: .8;
+}
+
+@media screen and (max-width: 479px){
+    body{
+        background: linear-gradient(45deg, rgba(221,8,144,1), rgba(75,0,130,1));
+    }
+    .gridwrapper{
+        grid-template-areas:
+        "he he he as"
+        "s1 s1 s1 s1"
+        "s2 s2 s2 s2"
+        "s3 s3 s3 s3"
+        "s4 s4 s4 s4"
+        "f f f f"
+        ;
+    }
 }
