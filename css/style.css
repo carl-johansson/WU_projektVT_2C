@@ -49,9 +49,53 @@ nav{
 }
 
 .burger{
-    margin-right: 50px;
+    margin-right: 0px;
     position: absolute;
 }
+
+/*Bokning där nere*/
+.bokning{
+    margin-right: 0px;
+    position: fixed;
+    display: flex;
+    bottom: 50px;
+    grid-area: f;
+    background-color: green;
+}
+.bokningNav{
+    display: flex;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    background-color: pink;
+    align-items: center;
+    height: 70px;
+    width: 100vw;
+    z-index: 2;
+    bottom: -15px;
+}
+.bokningLinks{ /*Bokning text*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: fixed;
+    width: 100%;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: bold;
+    translate: all 1s;
+    z-index: 3;
+}
+.boka_text{
+    color: red;
+    height: 45px;
+}
+.boka_text:hover{
+    color: red;
+    opacity: .9;
+}
+
+
 
 .navLinks{ /*rosa sido-bar*/
     display: flex;
@@ -116,8 +160,8 @@ nav{
 }
 .s1{
     grid-area: s1;
-    background: yellow;
-    opacity: .0;
+    opacity: 1;
+    margin-left: 15px;
 }
 .s2{
     grid-area: s2;
@@ -171,4 +215,18 @@ nav{
         translate: all 1s;
         z-index: 1;
     }
+    .bokningLinks{ /*Bokning text*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: fixed;
+        width: 100vw;
+        list-style-type: none;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+}
+
+a:visited{
+    color: rgba(221,8,144,1);
 }
