@@ -183,7 +183,11 @@ nav{
     background: orange;
     opacity: .0;
 }
-
+/*@media only screen and (min-width: 579px){
+    #slider{
+        display: none
+    }
+}*/
 @media screen and (min-width: 579px){ /*479 kanske*/
     body{
         background: linear-gradient(45deg, rgba(221,8,144,1), rgba(75,0,130,1));
@@ -225,8 +229,156 @@ nav{
         font-size: 20px;
         font-weight: bolder;
     }
+    /*MITT KONTO*/
+
 }
 
 a:visited{
     color: rgba(221,8,144,1);
+}
+
+/*MITT KONTO*/
+
+/*@keyframes slide{
+    0%{
+        left: 0;
+    }
+    10%{
+        left: 0;
+    }
+    20%{
+        left: -100%;
+    }
+    30%{
+        left: -100%;
+    }
+    40%{
+        left: -200%;
+    }
+    50%{
+        left: -200%;
+    }
+    60%{
+        left: -300%;
+    }
+    70%{
+        left: -300%;
+    }
+    80%{
+        left: -400%;
+    }
+    90%{
+        left: -400%;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+#slider{
+    overflow: hidden;
+    grid-area: he;
+    height: 60px;
+    width: 100%;
+}
+#slider figure img{
+    float: left;
+    width: 20%;
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    animation: slide 10s infinite;
+}*/
+
+
+
+* {box-sizing: border-box}
+/* Full-width input fields */
+  input[type=text], input[type=password]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+button{ /*Box med skapa på*/
+  background-color: greenyellow;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  text-emphasis-style: ;
+}
+button:hover{
+  opacity:1;
+}
+/*Style för cancel button*/
+.cancelbtn{
+  padding: 14px 20px;
+  background-color: red;
+}
+.cancelbtn, .signupbtn{
+  float: left;
+  width: 50%;
+}
+.container{
+  padding: 16px;
+}
+/*modal bakgrund*/
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+/*Skapa konto box*/
+.modal-content{
+  background-color: none;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+hr{
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.close{
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+.close:hover,
+.close:focus{
+  color: #f44336;
+  cursor: pointer;
+}
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 579px){ /*300 innan, båda funkar*/
+  .cancelbtn, .signupbtn{
+    width: 100%;
+  }
 }

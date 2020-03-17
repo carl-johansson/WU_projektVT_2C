@@ -1,0 +1,109 @@
+<!--todo-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mitt konto</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="gridwrapper">
+
+        <nav>
+
+            <ul class="navLinks">
+                <li><a href="https://www.ntigymnasiet.se/johanneberg/">NTI</a></li>
+                <li><a href="sida_2.html">Boka</a></li>
+                <li><a href="sida_3.html">Övrigt</a></li>
+                <li><a href="sida_4.html">Kontakter</a></li>
+            </ul>
+        
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+        </nav>
+
+        <nav class="bokningNav">
+
+            <ul class="bokningLinks">
+                <li class="boka_text"><a href="boka.html" style="text-decoration: none;">BOKA!</a></li>
+                <li><a href="#" style="text-decoration: none;">BOKNINGAR</a></li>
+                <li><a href="#" style="text-decoration: none;">HJÄLP</a></li>
+                <li><a href="sida_3_mitt_konto.html" style="text-decoration: none;">MITT KONTO</a></li>
+            </ul>
+        
+            <div class="bokning">
+                <div class="bokningBox"></div>
+            </div>
+
+        </nav>
+
+        <script src="script.js"></script>
+
+
+        <button onclick="document.getElementById('id01').style.display='block'">Skapa</button>
+
+<!-- The Modal (contains the Sign Up form) -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"></span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Skapa ett konto</h1>
+      <p>Fyll i samtliga nedanstående fält</p>
+      <hr>
+      <label for="email"><b>Mail</b></label>
+      <input type="text" placeholder="Fyll i mail" name="email" required>
+
+      <label for="psw"><b>Lösenord</b></label>
+      <input type="password" placeholder="Fyll i lösenord" name="psw" required>
+
+      <label for="psw-repeat"><b>Upprepa lösenord</b></label>
+      <input type="password" placeholder="Fyll i upprepat lösenord" name="psw-repeat" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Kom ihåg mig
+      </label>
+
+      <p>Genom att skapa ett konto på denna hemsidan går du med på <a href="#" style="color:rgb(30, 144, 255)">Integritetspolicy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Avbryt</button>
+        <button type="submit" class="signup">Skapa</button>
+      </div>
+    </div>
+  </form>
+</div>
+        
+        
+        <!--<div id="slider">
+            <figure>
+                <img src="/img/ps_redigerad.png" alt="bild på abstrakt figur redigerad i ps, svart och vit abstrakt figur"> 
+                <img src="/img/redigerad_bild2.png" alt="bild på abstrakt figur redigerad i ps, svart och orange abstrakt figur"> 
+                <img src="/img/redigerad_bild3.png" alt="bild på abstrakt figur redigerad i ps, svart och blå abstrakt figur"> 
+                <img src="/img/redigerad_bild4.png" alt="bild på abstrakt figur redigerad i ps, svart och mörk blå abstrakt figur"> 
+                <img src="/img/redigerad_bild5.png" alt="bild på abstrakt figur redigerad i ps, svart och grå abstrakt figur"> 
+            </figure>
+    
+        </div>-->
+
+
+        
+
+    </div>
+
+
+    
+    
+
+    <!--<img class="logo" src="img/Grägrä_bilder/makerspace_logo.png">-->
+    <a href="index.html"><img src="./img/Grägrä_bilder/makerspace_logo.png" class="logo" alt="bild på MakerSpace logo"/></a>
+    
+</body>
+</html>
