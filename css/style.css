@@ -5,7 +5,8 @@
 }
 
 body{
-    background: linear-gradient(135deg, rgba(221,8,144,1), rgba(75,0,130,1));
+    /*background: linear-gradient(135deg, rgba(221,8,144,1), rgba(75,0,130,1));*/
+    background: linear-gradient(135deg, #274046, #000000);
 }
 
 .gridwrapper{
@@ -29,11 +30,13 @@ body{
     position: absolute;
     top: 10px;
     left: 10px;
+    opacity: .7;
 }
 
 .logo:hover{
-    background: linear-gradient(135deg, rgba(221,8,144,1), rgba(76, 0, 130, 0.747), rgba(221,8,144,1));
-    opacity: .9;
+    /*background: linear-gradient(135deg, rgba(221,8,144,1), rgba(76, 0, 130, 0.747), rgba(221,8,144,1));*/
+    /*background: linear-gradient(135deg, #274046, #000000);*/
+    opacity: 1;
 }
 
 nav{
@@ -62,7 +65,7 @@ nav{
     grid-area: f;
     background-color: green;
 }
-.bokningNav{
+/*.bokningNav{
     display: flex;
     position: fixed;
     left: 0px;
@@ -73,7 +76,7 @@ nav{
     width: 100vw;
     z-index: 2;
     bottom: -15px;
-}
+}*/ Denna är rosa bar där nere, men den e onödig
 .bokningLinks{ /*Bokning text*/
     display: flex;
     flex-direction: row;
@@ -97,7 +100,7 @@ nav{
 
 
 
-.navLinks{ /*rosa sido-bar*/
+.navLinks{ /*fd. "rosa sido-bar"*/
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -105,7 +108,7 @@ nav{
     right: 0px;
     height: 90vh;
     top: -90vh;
-    background-color: pink;
+    background-color: #274046;
     align-items: center;
     width: 25%;
     translate: all 1s;
@@ -162,6 +165,7 @@ nav{
     grid-area: s1;
     opacity: 1;
     margin-left: 15px;
+    color: white;
 }
 .s2{
     grid-area: s2;
@@ -180,8 +184,8 @@ nav{
 }
 .f{
     grid-area: f;
-    background: orange;
-    opacity: .0;
+    /*background: #000008;*/
+    opacity: .7;
 }
 /*@media only screen and (min-width: 579px){
     #slider{
@@ -190,7 +194,7 @@ nav{
 }*/
 @media screen and (min-width: 579px){ /*479 kanske*/
     body{
-        background: linear-gradient(45deg, rgba(221,8,144,1), rgba(75,0,130,1));
+        background: linear-gradient(135deg, #274046, #000000);
     }
     .gridwrapper{
         grid-template-areas:
@@ -213,13 +217,13 @@ nav{
         right: 0px;
         height: 60px;
         top: 0vh;
-        background-color: pink;
+        background-color: #274046;
         align-items: center;
         width: 60%;
         translate: all 1s;
         z-index: 1;
     }
-    .bokningLinks{ /*Bokning text*/
+    /*.bokningLinks{ Bokning text
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -228,7 +232,7 @@ nav{
         list-style-type: none;
         font-size: 20px;
         font-weight: bolder;
-    }
+    }*/
     /*MITT KONTO*/
 
 }
@@ -237,43 +241,6 @@ a:visited{
     color: rgba(221,8,144,1);
 }
 
-/*MITT KONTO*/
-
-/*@keyframes slide{
-    0%{
-        left: 0;
-    }
-    10%{
-        left: 0;
-    }
-    20%{
-        left: -100%;
-    }
-    30%{
-        left: -100%;
-    }
-    40%{
-        left: -200%;
-    }
-    50%{
-        left: -200%;
-    }
-    60%{
-        left: -300%;
-    }
-    70%{
-        left: -300%;
-    }
-    80%{
-        left: -400%;
-    }
-    90%{
-        left: -400%;
-    }
-    100%{
-        left: 0;
-    }
-}
 
 #slider{
     overflow: hidden;
@@ -295,9 +262,8 @@ a:visited{
     /*här ska jag lägga länk till sida 3 boka*/
     /*background: url(sida_3_mitt_konto.html);*/
 }
-
-* {box-sizing: border-box}
-/* Full-width input fields */
+* {box-sizing: border-box
+}
   input[type=text], input[type=password]{
   width: 100%;
   padding: 15px;
@@ -306,8 +272,6 @@ a:visited{
   border: none;
   background: #f1f1f1;
 }
-
-/* Add a background color when the inputs get focus */
 input[type=text]:focus, input[type=password]:focus{
   background-color: #ddd;
   outline: none;
@@ -406,7 +370,7 @@ hr{
     width: 80%;
   }
   button{ /*Box med skapa på*/
-    background-color: greenyellow;
+    background: rgba(75,0,130,.7);
     color: black;
     padding: 14px 20px;
     margin: 100px 0;
@@ -416,7 +380,8 @@ hr{
     opacity: 0.9;
     text-emphasis-style: 0; /*gör "skapa" texten centrerad*/
     font-weight: bolder;
-    margin: 10px 0px; /*denna är beroende av "button margin: 100px....... fuck."*/
+    color: white;
+    margin: 0px 0px; /*denna är beroende av "button margin: 100px....... fuck."*/
   }
   .cancelbtn, .signupbtn{
     float: left;
@@ -424,4 +389,57 @@ hr{
     font-weight: bolder;
     /*margin: -100px 0px;*/
   }
+}
+
+.social_media_links{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    grid-area: f;
+    width: 100vw;
+    right: 0;
+    bottom: 0px;
+}
+/*Cirklar med social_media_länkar i*/
+.circles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    right: 0px;
+    height: 60px;
+    bottom: 40px;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+.circle1{
+    border: 2px solid black;
+    background: ffffff;
+    width: 100px;
+    height: 50px;
+    border-radius: 100%;
+    display: inline-block;
+    line-height: 6vh;
+}
+.circle2{
+    border: 2px solid black;
+    background: ffffff;
+    width: 100px;
+    height: 50px;
+    border-radius: 100%;
+    display: inline-block;
+    line-height: 6vh;
+}
+.circle3{
+    border: 2px solid black;
+    background: ffffff;
+    width: 100px;
+    height: 50px;
+    border-radius: 100%;
+    display: inline-block;
+    line-height: 6vh;
 }
