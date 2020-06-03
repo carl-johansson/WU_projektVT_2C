@@ -20,22 +20,7 @@ function myFunction() {
         alert(document.getElementById("myP").style.display);
 }
 
-//function bokatKlart() {
-    //alert("I am an alert box!");
-//}
-
 function promptMe() {
     document.getElementById("demo").innerHTML = "Hello World";
 }
 
-//burger 2 för mitt konto
-
-// const nav2 = document.querySelector('.navLinks2')
-// const burger2 = document.querySelector('.burger2')
-
-// function togglemeny() {
-//     nav2.classList.toggle('nav2Active')
-//     burger2.classList.toggle('toggle')    
-// }
-
-// burger2.addEventListener('click', togglemeny)
