@@ -19,7 +19,7 @@
                 <li><a href="sida_4_NTI.html">NTI</a></li>
                 <li><a href="sida_2_boka.html">Boka</a></li>
                 <li><a href="index.html">Hem</a></li>
-                <li><a href="sida_3_mitt_konto.html">Mitt konto</a></li>
+                <li><a href="sida_3_mitt_konto.html">Konto</a></li>
             </ul>
         
             <div class="burger">
@@ -36,17 +36,66 @@
 
 
         <section class="h"></section>
-        <section class="s1">Välkommen till BOKA</section>
+        <section class="s1"></section>
         <section class="s2"></section>
         <section class="s3"></section>
         <section class="s4"></section>
         <section class="f"></section>
+
+
+            <div>
+            <br>
+            <br>
+            <br>
+            <br>
+​
+<form class="bokaPrinter" action="/action_page.php">
+  <h3>Välj typ av printer:</h4>
+  <!--Välj typ av printer-->
+  <input type="checkbox" id="prusaBox" name="prusa" value="måndag">
+  <label for="måndag">Prusa MK3</label>
+  
+  <input type="checkbox" id="ceralityBox" name="cerality" value="tisdag">
+  <label for="tisdag">Cerality cr10s</label>
+  <br>
+  <br>
+  <br> <!--Välja dag-->
+  <h3>Välj dag:</h3>
+  <input type="checkbox" id="måndagBox" name="måndag" value="måndag">
+  <label for="måndag">Måndag</label>
+
+  <input type="checkbox" id="tisdagBox" name="tisdag" value="tisdag">
+  <label for="tisdag">Tisdag</label>
+
+  <input type="checkbox" id="onsdagBox" name="onsdag" value="onsdag">
+  <label for="onsdag">Onsdag</label>
+
+  <input type="checkbox" id="torsdagBox" name="torsdag" value="torsdag">
+  <label for="torsdag">Torsdag</label>
+
+  <input type="checkbox" id="fredagBox" name="fredag" value="fredag">
+  <label for="fredag">Fredag</label>
+  <br>
+  <br> <!--Boka klart-->
+  <button class="button2" onclick="promptMe()">Boka!</button> <!--Koden funkar inte trots att den borde funka
+  <br> -->
+  
+</form>
+        </div>
+
         
 
     </div>
 
+    
+
     <!--<img class="logo" src="img/Grägrä_bilder/makerspace_logo.png">-->
     <a href="index.html"><img src="./img/Grägrä_bilder/makerspace_logo.png" class="logo" alt="bild på MakerSpace logo"/></a>
-    
+
+
+
+
 </body>
 </html>
+
+

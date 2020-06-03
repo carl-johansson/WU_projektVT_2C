@@ -11,31 +11,66 @@
 
 <body>
 
+  
+
+  <p class="kontoP">Dina inställningar</p>
+  <br>
+  <br>
+  <p class="kontoP2">Darkmode</p>
+  <br>
+  <br>
+  <p class="kontoP3">
+    Tidigare bokningar
+    <br>
+    <br>
+    <br>
+    Notifikationer
+    <br>
+    <br>
+    <br>
+    Donationer
+    <br>
+    <br>
+    <br>
+    Felanmälan
+    <br>
+    <br>
+    <br>
+    Kontakta styrelsen
+    <br>
+    <br>
+    <br>
+    Nasir
+  </p>
+
     <div class="gridwrapper">
+        <!-- <nav2>
 
-        <nav>
-
-            <ul class="navLinks">
+            <ul class="navLinks2">
                 <li><a href="sida_4_NTI.html">NTI</a></li>
                 <li><a href="sida_2_boka.html">Boka</a></li>
                 <li><a href="index.html">Hem</a></li>
-                <li><a href="sida_3_mitt_konto.html">Mitt konto</a></li>
+                <li><a href="sida_3_mitt_konto.html">Konto</a></li>
             </ul>
         
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+            <div class="burger2">
+                <div class="line4"></div>
+                <div class="line5"></div>
+                <div class="line6"></div>
             </div>
 
-        </nav>
+        </nav2> -->
+
+        <div>
+
+        </div>
 
         
 
         <script src="script.js"></script>
 
 
-        <button onclick="document.getElementById('id01').style.display='block'">Skapa ett konto</button>
+        <button class="skapaKonto" onclick="document.getElementById('id01').style.display='block'">Skapa ett konto</button>
 
 <!-- The Modal (contains the Sign Up form) -->
 <div id="id01" class="modal">
@@ -45,45 +80,41 @@
       <h1>Skapa ett konto</h1>
       <p>Fyll i samtliga nedanstående fält</p>
       <hr>
-      <label for="email"><b>Mail</b></label>
-      <input type="text" placeholder="Fyll i mail" name="email" required>
+      <label for="email"><b>Mail<br></b></label>
+      <input class="ruta" type="text" placeholder="Fyll i mail" name="email" required>
 
-      <label for="psw"><b>Lösenord</b></label>
-      <input type="password" placeholder="Fyll i lösenord" name="psw" required>
+      <label for="psw"><b>Lösenord<br></b></label>
+      <input class="ruta" type="password" placeholder="Fyll i lösenord" name="psw" required>
 
-      <label for="psw-repeat"><b>Upprepa lösenord</b></label>
-      <input type="password" placeholder="Fyll i upprepat lösenord" name="psw-repeat" required>
+      <label for="psw-repeat"><b>Upprepa lösenord<br></b></label>
+      <input class="ruta" type="password" placeholder="Fyll i upprepat lösenord" name="psw-repeat" required>
 
       <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Kom ihåg mig
+        <input id="checkboxSkapa" type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Kom ihåg mig
       </label>
 
       <p>Genom att skapa ett konto på denna hemsidan går du med på <a href="#" style="color:rgb(30, 144, 255)">Integritetspolicy</a>.</p>
 
       <div class="clearfix">
         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Avbryt</button>
-        <button type="submit" class="signup">Skapa mitt konto :)</button>
-      </div>
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="signup">Skapa mitt konto :)</button>
+      </div> <!--Ändrade button i submit till button från submit-->
     </div>
   </form>
 </div>
-        
-        
-        <!--<div id="slider">
-            <figure>
-                <img src="/img/ps_redigerad.png" alt="bild på abstrakt figur redigerad i ps, svart och vit abstrakt figur"> 
-                <img src="/img/redigerad_bild2.png" alt="bild på abstrakt figur redigerad i ps, svart och orange abstrakt figur"> 
-                <img src="/img/redigerad_bild3.png" alt="bild på abstrakt figur redigerad i ps, svart och blå abstrakt figur"> 
-                <img src="/img/redigerad_bild4.png" alt="bild på abstrakt figur redigerad i ps, svart och mörk blå abstrakt figur"> 
-                <img src="/img/redigerad_bild5.png" alt="bild på abstrakt figur redigerad i ps, svart och grå abstrakt figur"> 
-            </figure>
-    
-        </div>-->
 
 
-        
 
-    </div>
+<!--EN FORM AV TOGGLE-->
+<label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider rund"></span>
+</label>
+
+
+</div> <!--SLUT AV GRIDWRAPPER-->
+
+<a href="index.html"><img src="./img/Grägrä_bilder/makerspace_logo.png" class="logo" alt="bild på MakerSpace logo"/></a>
 
 
     
